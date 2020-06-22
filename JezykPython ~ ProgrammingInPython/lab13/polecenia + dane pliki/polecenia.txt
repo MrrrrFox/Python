@@ -1,0 +1,33 @@
+Uwaga: przy przesyłaniu zadania wszystkie potrzebne pliki proszę spakować.
+Funkcje w języku C proszę umieścić w osobnym pliku. Pliki typu mod.c należy 
+używać jako "interfejs" pomiędzy kodem napisanym w Pythonie a C/C++.
+
+
+Proszę zapisać plik rozszerzenia (mod.c) oraz skrypt instalacyjny (setup.py). 
+Proszę tak zmodyfikować plik rozszerzenia, aby otrzymywany wynik był poprawny, tj. np. :
+met(1,2)                       #3
+met(1,2,5)                    #8
+met(1,2,5,[2,3,4])       #17
+(2p).
+
+Proszę zaimplementować w Pythonie i w C funkcję sortującą bąbelkowo jednowymiarową 
+tablicę liczb całkowitych, jako parametr do funkcji należy podać tablicę. 
+Funkcję napisaną w C proszę wywołać z programu w Pythonie. 
+Proszę porównać czasy wykonania obu funkcji dla takiej samej listy wartości losowych 
+o rozmiarze  [10, 102, 103, 104] przy czym liczby losujemy z zakresu [0, rozmiar] (4p)
+
+Sortowanie bąbelkowe(tab, n)
+1: for i ← 0, n do
+2:     for j ← 0, n − 1 do
+3:         if tab[j] > tab[j + 1] then
+4:             swap(tab[j], tab[j + 1])
+5:         end if
+6:     end for
+7: end for
+
+
+Proszę zmodyfikować plik rozszerzenia tak, aby była w nim funkcja, do której jako 
+parametr będziemy przekazywać z Pythona dwie dwuwymiarowe listy. Listy te proszę 
+przepisać do tablic w języku C, a następnie wywołując zaimplementowaną w języku C 
+funkcję proszę obliczyć iloczyn otrzymanych macierzy. Z funkcji "zwracamy" otrzymany 
+wynik. Tablicę wynikową konwertujemy do listy pythonowej i zwracamy (4p).
